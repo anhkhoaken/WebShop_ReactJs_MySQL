@@ -1,0 +1,23 @@
+{
+  "name": "webbanhang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhkhoaken/WebShop_ReactJs_MySQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anhkhoaken/WebShop_ReactJs_MySQL/issues"
+  },
+  "homepage": "https://github.com/anhkhoaken/WebShop_ReactJs_MySQL#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
