@@ -1,53 +1,33 @@
-import React from 'react';
 import './App.css';
+import React, { Component } from 'react';
+import Myheader from './component/header';
+import { DropdownButton,Dropdown } from 'react-bootstrap';
 
-function App() {
-  return (
-    <div id="layout">
-      <header>HEADER</header>
 
-      <main>
-        <section id="content">
-          <h1>Big Title</h1>
-          <ul className="item-list">
-            <li>
-              <h2>Title 01</h2>
-              <div>
-                Proin ex nunc, bibendum ut magna quis.
-              </div>
-            </li>
+export class App extends Component {
+  constructor(props){
+    super(props);
+    this.setState({
 
-            <li>
-              <h2>Title 02</h2>
-              <div>
-                Blandit mollis orci. Ut pretium diam ut tristique interdum amet condimentum.
-              </div>
-            </li>
-
-            <li>
-              <h2>Title 03</h2>
-              <div>
-                Donec ut libero pretium, efficitur nisl vel, sagittis elit.
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <aside>
-          ASIDE
-        </aside>
-
-        <ul className="box-list">
-          <li>Box 1</li>
-          <li>Box 2</li>
-          <li>Box 3</li>
-          <li>Box 4</li>
-        </ul>
-      </main>
-
-      <footer>FOOTER</footer>
-    </div>
-  );
-};
+    })
+  }
+  render() {
+    return (
+      <div>
+          <Myheader></Myheader>
+          <div id="mainbar">
+            <DropdownButton id="dropdown-basic-button" title=" Hãng Sản Xuất ">
+              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            </DropdownButton>
+            <button> Trả góp 0% </button>
+            <button> Bảo hành máy </button>
+            <button> Chính sách đổi trả </button>
+          </div>
+      </div>
+    )
+  }
+}
 
 export default App;

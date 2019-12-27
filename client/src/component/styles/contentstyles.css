@@ -1,0 +1,5 @@
+#MainMenu {
+    display: flex;
+    background-color: darkgray;
+    flex-direction: row;
+}
