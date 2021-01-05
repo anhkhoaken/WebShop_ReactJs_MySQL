@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/anhkhoaken/WebShop_ReactJs_MySQL#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "concurrently": "^5.0.2",
     "express": "^4.17.1"
   }
